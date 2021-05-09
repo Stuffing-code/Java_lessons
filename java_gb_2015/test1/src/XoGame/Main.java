@@ -1,0 +1,13 @@
+package XoGame;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Game game = new Game();
+
+        Game.cells.setCells();
+        Game.cells.showCells();
+
+        game.startGame();
+    }
+}
