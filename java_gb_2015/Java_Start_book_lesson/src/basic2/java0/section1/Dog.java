@@ -7,20 +7,14 @@ public class Dog {
     public static final int TAIL = 1;
     private String name;
     private String bread;
-    private String size;
+    private Size size;
 
-    public String getSize() {
+    public Size getSize() {
         return size;
     }
 
-    public void setSize(String size) {
-        if (size.equalsIgnoreCase("Big") ||
-                size.equalsIgnoreCase("Average") ||
-                size.equalsIgnoreCase("Small")) {
-            this.size = size;
-        } else {
-            System.out.println("Correct size dog: Big, Average or Small");
-        }
+    public void setSize(Size size) {
+        this.size = size;
     }
 
     public Dog() {
@@ -50,13 +44,32 @@ public class Dog {
     }
 
     public void bark() {
-        if (size.equalsIgnoreCase("Big")) {
-            System.out.println("Wof - wof");
-        } else if (size.equalsIgnoreCase("Average")) {
-            System.out.println("Raf - raf");
-        } else {
-            System.out.println("Tiaf - tiaf");
+        switch (size) {
+            case BIG, VERY_BIG -> System.out.println("Wof - wof");
+            case AVERAGE -> System.out.println("Raf - raf");
+            case SMALL, VERY_SMALL -> System.out.println("Taif - tiaf");
         }
+
+//        switch (size) {
+//            case BIG:
+//            case VERY_BIG:
+//                System.out.println("Wof - wof");
+//                break;
+//            case AVERAGE:
+//                System.out.println("Raf - raf");
+//                break;
+//            case SMALL:
+//            case VERY_SMALL:
+//                System.out.println("Taif - tiaf");
+//                break;
+//        }
+//        if ("Big".equalsIgnoreCase(size)) {
+//            System.out.println("Wof - wof");
+//        } else if (size.equalsIgnoreCase("Average")) {
+//            System.out.println("Raf - raf");
+//        } else {
+//            System.out.println("Tiaf - tiaf");
+//        }
     }
 
     public void bite() {

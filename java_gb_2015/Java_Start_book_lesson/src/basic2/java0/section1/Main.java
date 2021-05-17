@@ -5,19 +5,19 @@ public class Main {
         Dog lab = new Dog();
         lab.setBread("Lab");
         lab.setName("Charly");
-        lab.setSize("Average");
+        lab.setSize(Size.AVERAGE);
         lab.bite();
 
         Dog sheppard = new Dog();
         sheppard.setName("Mike");
         sheppard.setBread("Sheppard");
-        sheppard.setSize("Big");
+        sheppard.setSize(Size.BIG);
         sheppard.bite();
 
         Dog doberman = new Dog();
         doberman.setName("Jack");
         doberman.setBread("Doberman");
-        doberman.setSize("Big");
+        doberman.setSize(Size.BIG);
         doberman.bite();
     }
 }
