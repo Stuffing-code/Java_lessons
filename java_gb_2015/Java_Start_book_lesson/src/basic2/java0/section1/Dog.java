@@ -7,7 +7,7 @@ public class Dog {
     public static final int TAIL = 1;
     private String name;
     private String bread;
-    private Size size;
+    private Size size = Size.UNDEFINED;
 
     public Size getSize() {
         return size;
@@ -48,6 +48,7 @@ public class Dog {
             case BIG, VERY_BIG -> System.out.println("Wof - wof");
             case AVERAGE -> System.out.println("Raf - raf");
             case SMALL, VERY_SMALL -> System.out.println("Taif - tiaf");
+            default -> System.out.println("Dog's size is undefined");
         }
 
 //        switch (size) {

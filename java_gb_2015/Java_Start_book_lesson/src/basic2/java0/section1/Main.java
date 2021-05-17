@@ -5,7 +5,7 @@ public class Main {
         Dog lab = new Dog();
         lab.setBread("Lab");
         lab.setName("Charly");
-        lab.setSize(Size.AVERAGE);
+//        lab.setSize(Size.AVERAGE);
         lab.bite();
 
         Dog sheppard = new Dog();
@@ -19,5 +19,14 @@ public class Main {
         doberman.setBread("Doberman");
         doberman.setSize(Size.BIG);
         doberman.bite();
+
+        Size s = Size.SMALL;
+        Size s1 = Size.valueOf("BIG");
+//        System.out.println(s1);
+
+        Size[] values = Size.values();
+        for (Size value : values) {
+            System.out.println(value);
+        }
     }
 }
