@@ -1,6 +1,6 @@
 package basic2.java0.Inheritance;
 
-public class Auto {
+public abstract class Auto {
     private String producer;
     private String model;
     private Engine engine;
@@ -12,6 +12,12 @@ public class Auto {
         this.model = model;
         this.engine = engine;
         System.out.println("Auto was initialized");
+    }
+
+    public abstract void energize();
+
+    public static void doSmth() {
+
     }
 
     public void start() {

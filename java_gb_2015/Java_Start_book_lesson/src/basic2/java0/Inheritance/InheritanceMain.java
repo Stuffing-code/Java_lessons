@@ -11,7 +11,7 @@ public class InheritanceMain {
 
         Engine busEngine = new Engine(3.5, EngineType.DIESEL, 150);
         Auto bus = new Bus("Mercedes", "Sprinter", busEngine, 30, 75, 12);
-        Auto auto = new Auto("WV", "Polo", busEngine);
+//        Auto auto = new Auto("WV", "Polo", busEngine);
 
 //        bus.start();
 //        bus.stop();
@@ -22,16 +22,13 @@ public class InheritanceMain {
         runCar(bus);
         runCar(truck);
         runCar(car);
-        runCar(auto);
+//        runCar(auto);
 
     }
 
     private static void runCar(Auto auto) {
         auto.stop();
         auto.start();
-        if (auto instanceof FuelAuto) {
-            FuelAuto fuelAuto = (FuelAuto) auto;
-            fuelAuto.fuelUp(50);
-        }
+        auto.energize();
     }
 }

@@ -12,6 +12,11 @@ public class Truck extends FuelAuto {
     }
 
     @Override
+    public void energize() {
+        fuelUp(getTankVolume() - getAvailablePetrol());
+    }
+
+    @Override
     public void start() {
         isRunning = true;
         setCurrentSpeed(10);
