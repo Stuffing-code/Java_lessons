@@ -3,25 +3,25 @@ package basic2.java0.Inheritance;
 public class Auto {
     private String producer;
     private String model;
-    private EngineType engineType;
+    private Engine engine;
     private int currentSpeed;
-    protected boolean isRunnig;
+    protected boolean isRunning;
 
-    public Auto(String producer, String model, EngineType engineType) {
+    public Auto(String producer, String model, Engine engine) {
         this.producer = producer;
         this.model = model;
-        this.engineType = engineType;
+        this.engine = engine;
         System.out.println("Auto was initialized");
     }
 
     public void start() {
-        isRunnig = true;
+        isRunning = true;
         currentSpeed = 10;
         System.out.println("Auto is starting");
     }
 
     public void stop() {
-        isRunnig = false;
+        isRunning = false;
         currentSpeed = 0;
         System.out.println("Auto has stopped");
     }
@@ -32,6 +32,10 @@ public class Auto {
 
     }
 
+    public Engine getEngine() {
+        return engine;
+    }
+
     public String getProducer() {
         return producer;
     }
@@ -40,16 +44,13 @@ public class Auto {
         return model;
     }
 
-    public EngineType getEngineType() {
-        return engineType;
-    }
 
     public int getCurrentSpeed() {
         return currentSpeed;
     }
 
-    public boolean isRunnig() {
-        return isRunnig;
+    public boolean isRunning() {
+        return isRunning;
     }
 
     @Override
@@ -57,9 +58,9 @@ public class Auto {
         return "Auto{" +
                 "producer='" + producer + '\'' +
                 ", model='" + model + '\'' +
-                ", engineType=" + engineType +
+                ", engineType=" + engine +
                 ", currentSpeed=" + currentSpeed +
-                ", isRunnig=" + isRunnig +
+                ", isRunnig=" + isRunning +
                 '}';
     }
 }
