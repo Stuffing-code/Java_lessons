@@ -32,6 +32,10 @@ public class Auto {
 
     }
 
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
     public Engine getEngine() {
         return engine;
     }
