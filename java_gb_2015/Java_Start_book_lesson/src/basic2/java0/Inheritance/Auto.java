@@ -5,7 +5,7 @@ public class Auto {
     private String model;
     private EngineType engineType;
     private int currentSpeed;
-    private boolean isRunnig;
+    protected boolean isRunnig;
 
     public Auto(String producer, String model, EngineType engineType) {
         this.producer = producer;
@@ -17,7 +17,7 @@ public class Auto {
     public void start() {
         isRunnig = true;
         currentSpeed = 10;
-        System.out.println("Aouto is starting");
+        System.out.println("Auto is starting");
     }
 
     public void stop() {
