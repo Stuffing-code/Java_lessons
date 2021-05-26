@@ -5,7 +5,7 @@ public class ExceptionHandingMain {
         System.out.println(divide(10, 0));;
     }
 
-    private static int divide(int numerator, int denumenator) {
-        return numerator / denumenator;
+    private static int divide(int numerator, int denominator) {
+        return numerator / denominator;
     }
 }
