@@ -5,19 +5,25 @@ public class Root_search {
     public static void rootSearch(int a, int b, int c) {
 
         while (true) {
-            if (a == 0) {
+            if (a == 0 && b != 0 && c != 0) {
                 double result = ((double)-c / b);
                 System.out.println(result);
                 break;
-            } else{
+            } else if (a == 0 && b == 0 && c != 0) {
+                System.out.println("No rational solution, cannot be divisible by 0");
+                break;
+            } else if (a == 0 && b == 0 && c == 0) {
+                System.out.println("result any number");
+                break;
+            } else {
                 int discriminant = ((b * b) - (4 * a * c));
-                int root_1 = (int) ((-b + Math.sqrt(discriminant)) / (2 * a));
-                int root_2 = (int) ((-b - Math.sqrt(discriminant)) / (2 * a));
+                int result_1 = (int) ((-b + Math.sqrt(discriminant)) / (2 * a));
+                int result_2 = (int) ((-b - Math.sqrt(discriminant)) / (2 * a));
                 if (discriminant == 0) {
-                    System.out.println("root = " + root_1);
+                    System.out.println("result = " + result_1);
                     break;
                 } else if (discriminant > 0) {
-                    System.out.println("root's = " + root_1 + ", " + root_2 + ".");
+                    System.out.println("result's = " + result_1 + ", " + result_2 + ".");
                 } else {
                     System.out.println("No rational solution");
                 }
