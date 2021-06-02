@@ -19,7 +19,7 @@ public class Root_search {
         int result_1 = (int) ((-b + Math.sqrt(discriminant)) / (2 * a));
         int result_2 = (int) ((-b - Math.sqrt(discriminant)) / (2 * a));
         if (discriminant == 0) {
-            System.out.println(" Root_search: solveRootEquitation(): result = " + result_1);
+            System.out.println("Root_search: solveRootEquitation(): result = " + result_1);
         } else if (discriminant > 0) {
             System.out.println("Root_search: solveRootEquitation(): result's = " + result_1 + ", " + result_2 + ".");
         } else {
