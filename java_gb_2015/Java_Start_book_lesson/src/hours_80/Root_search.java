@@ -13,6 +13,7 @@ public class Root_search {
         }
     }
 
+//    Если уравнение квадратное
     public static void solveRootEquitation(int a, int b, int c) {
         int discriminant = ((b * b) - (4 * a * c));
         int result_1 = (int) ((-b + Math.sqrt(discriminant)) / (2 * a));
@@ -26,6 +27,7 @@ public class Root_search {
         }
     }
 
+//    При a == 0
     public static void solveLinearEquitation(int b, int c) {
         if (b != 0) {
             double result = ((double) -c / b);
