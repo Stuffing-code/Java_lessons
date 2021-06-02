@@ -6,7 +6,8 @@ public class Root_search {
 
         while (true) {
             if (a == 0) {
-                System.out.println("Enter please inger and non zero value 'a'");
+                double result = ((double)-c / b);
+                System.out.println(result);
                 break;
             } else{
                 int discriminant = ((b * b) - (4 * a * c));
