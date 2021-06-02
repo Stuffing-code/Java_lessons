@@ -5,7 +5,7 @@ public class Root_search {
     public static void solveAnyEquitation(int a, int b, int c) {
 
         if (a == 0 && b == 0 && c == 0) {
-            System.out.println("result any number");
+            System.out.println("Root_search: solveAnyEquitation(): result any number");
         } else if (a != 0) {
             solveRootEquitation(a, b, c);
         } else {
@@ -19,11 +19,11 @@ public class Root_search {
         int result_1 = (int) ((-b + Math.sqrt(discriminant)) / (2 * a));
         int result_2 = (int) ((-b - Math.sqrt(discriminant)) / (2 * a));
         if (discriminant == 0) {
-            System.out.println("result = " + result_1);
+            System.out.println(" Root_search: solveRootEquitation(): result = " + result_1);
         } else if (discriminant > 0) {
-            System.out.println("result's = " + result_1 + ", " + result_2 + ".");
+            System.out.println("Root_search: solveRootEquitation(): result's = " + result_1 + ", " + result_2 + ".");
         } else {
-            System.out.println("No rational solution");
+            System.out.println("Root_search: solveRootEquitation(): No rational solution");
         }
     }
 
@@ -31,9 +31,9 @@ public class Root_search {
     public static void solveLinearEquitation(int b, int c) {
         if (b != 0) {
             double result = ((double) -c / b);
-            System.out.println(result);
+            System.out.println("Root_search: solveLinearEquitation(): " + result);
         } else {
-            System.out.println("No rational solution, cannot be divisible by 0");
+            System.out.println("Root_search: solveLinearEquitation(): No rational solution, cannot be divisible by 0");
         }
     }
 
