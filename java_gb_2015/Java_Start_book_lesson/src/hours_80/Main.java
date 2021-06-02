@@ -11,6 +11,12 @@ public class Main {
         solveAnyEquitation(1, -2, -3);
         solveAnyEquitation(1, 0, 0);
         solveAnyEquitation(0, 0, 1);
+
+
+        for (int a=-5; a<5; a++)
+            for (int b=-5; b<5; b++)
+                for (int c=-5; c<5; c++)
+                    solveAnyEquitation(a,b,c);
     }
 
 
