@@ -11,10 +11,6 @@ public class Main {
         for (int i = 0; i < 100; i++) {
             fifo(list, randomNumber());
         }
-
-        int a = 5;
-        int b = 2;
-        System.out.println((double)(a + b) / 2);
     }
 
 
