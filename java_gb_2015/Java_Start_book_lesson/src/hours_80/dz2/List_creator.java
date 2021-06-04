@@ -50,11 +50,12 @@ public class List_creator {
             Collections.sort(list_temp); // sort list
 //            displayList(list);
             displayList(list_temp);
-//            System.out.println("List_creator: fifo(): " + solveMedian(list_temp.get(4), list_temp.get(3)));
             boolean check = checkMedian_type(list_temp.get(4), list_temp.get(3));
             if (check) {
+//            System.out.println("List_creator: fifo(): " + solveMedianDouble(list_temp.get(4), list_temp.get(3)));
                 System.out.println("[" + solveMedianDouble(list_temp.get(4), list_temp.get(3)) + "]");
             } else {
+//            System.out.println("List_creator: fifo(): " + solveMedianInt(list_temp.get(4), list_temp.get(3)));
                 System.out.println("[" + solveMedianInt(list_temp.get(4), list_temp.get(3)) + "]");
             }
             list.pop(); // remove first element
