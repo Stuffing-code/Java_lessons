@@ -1,6 +1,6 @@
-package hours_80;
+package hours_80.dz1;
 
-import static hours_80.Root_search.solveAnyEquitation;
+import static hours_80.dz1.Root_search.solveAnyEquitation;
 
 public class Main {
     public static void main(String[] args) {
