@@ -43,7 +43,7 @@ public class List_creator {
 //    main method
     public static void fifo(LinkedList<Integer> list, int number) {
         if (list.size() == 8) {
-            LinkedList<Integer> list_temp = new LinkedList<>(list);
+            LinkedList<Integer> list_temp = new LinkedList<>(list); // create temp arry
             displayList(list);
 //            displayList(list_temp);
 //            System.out.println();
