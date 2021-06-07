@@ -78,7 +78,7 @@ public class List_creator {
     }
 
     public  void printMedianValue(LinkedList<Integer> list_temp, int number) {
-        if (SIZE_BUFFER % 2 == 0) {
+        if (getSizeBuffer() % 2 == 0) {
             boolean check = checkMedian_type(list_temp.get(4), list_temp.get(3));
             if (check) {
                 //            System.out.println("List_creator: fifo(): " + solveMedianDouble(list_temp.get(4), list_temp.get(3)));
