@@ -5,9 +5,9 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class List_creator {
-    int SIZE_BUFFER;
-    int INDEX_MAX;
-    static int count = 0;
+    private int SIZE_BUFFER;
+    private int INDEX_MAX;
+    private static int count = 0;
 
     public List_creator(int SIZE_BUFFER) {
         this.SIZE_BUFFER = SIZE_BUFFER;
