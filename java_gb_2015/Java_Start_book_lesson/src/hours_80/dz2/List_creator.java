@@ -96,7 +96,7 @@ public class List_creator {
     public  void fifo(LinkedList<Integer> list, int number) {
         if (list.size() == getSizeBuffer()) {
             LinkedList<Integer> list_temp = new LinkedList<>(list); // create temp arry
-            displayList(list);
+            printUnsortedPart(list);
             printSortedPart(list_temp);
             printMedianValue(list_temp, number);
             list.pop(); // remove first element
