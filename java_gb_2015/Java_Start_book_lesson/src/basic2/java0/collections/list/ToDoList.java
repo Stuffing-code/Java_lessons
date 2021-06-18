@@ -1,22 +1,45 @@
 package basic2.java0.collections.list;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ToDoList {
-    private List<String> toDoList = new ArrayList<>();
+    private LinkedList<String> toDoList = new LinkedList<>();
 
-    public void addToDOlist(String task) {
-        toDoList.add(task);
+    public void addToDoList(String task) {
+//        toDoList.add(task);
+        addInAlphabeticalOrdedr(task);
+
     }
+
+    private boolean addInAlphabeticalOrdedr(String task){
+        ListIterator<String> listIter = toDoList.listIterator();
+        while (listIter.hasNext()) {
+            int compared = listIter.next().compareTo(task);
+            if (compared == 0) {
+                System.out.println("Task alredy exists in the list");
+                return true;
+            } else if (compared > 0) {
+                listIter.previous();
+                listIter.add(task);
+                return true;
+            }
+        }
+        toDoList.add(task);
+        return true;
+    }
+
 
     public void addtoListatPosition(int position, String task) {
         toDoList.add(position, task);
     }
 
     public void printToDoList() {
-        for (int i = 0; i < toDoList.size(); i++) {
-            System.out.println(i + " - " + toDoList.get(i));
+//        for (int i = 0; i < toDoList.size(); i++) {
+//            System.out.println(i + " - " + toDoList.get(i));
+//        }
+        Iterator<String> iterator = toDoList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println("Element " + iterator.next());
         }
     }
 

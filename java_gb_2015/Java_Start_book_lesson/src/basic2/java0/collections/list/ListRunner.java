@@ -1,6 +1,5 @@
 package basic2.java0.collections.list;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ListRunner {
@@ -16,7 +15,7 @@ public class ListRunner {
                     System.out.println("Please enter a task to add");
                     scanner.nextLine();
                     String task1 = scanner.nextLine();
-                    list.addToDOlist(task1);
+                    list.addToDoList(task1);
                     System.out.println("Please choose an action by typing [0 - 6]");
                     param = scanner.nextInt();
                 }
@@ -60,7 +59,7 @@ public class ListRunner {
                     System.out.println("Please enter a new task");
                     scanner.nextLine();
                     String task5 = scanner.nextLine();
-                    list.changeTask(index, task5);
+                    list.addtoListatPosition(index, task5);
                     System.out.println("Please choose an action by typing [0 - 6]");
                     param = scanner.nextInt();
                 }
